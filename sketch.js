@@ -16,16 +16,18 @@ let currentSound = null;
 let selectedFaculty = "";
 let fft;
 
+// Ana ekran görsel butonları
 let hotzones = {
-  ab1: [150, 100, 140, 70],
-  ab2: [330, 100, 140, 70],
-  ab3: [510, 100, 140, 70],
-  ab4: [150, 220, 140, 70],
-  scola: [330, 220, 140, 70],
-  stucen: [510, 220, 140, 70]
+  ab1: [130, 100, 140, 70],
+  ab2: [130, 200, 150, 70],
+  ab3: [130, 400, 150, 70],
+  ab4: [100, 600, 140, 70],
+  scola: [480, 200, 140, 70],
+  stucen: [480, 400, 140, 70]
 };
 
 
+// fakülte layout butonları
 let buttonZonesPerFaculty = {
   ab1: [
     [50, 220, 700, 70],
@@ -219,5 +221,3 @@ function drawStopButton() {
     text("⏯", x + w / 2, y + h / 2);
   }
 }
-
-
